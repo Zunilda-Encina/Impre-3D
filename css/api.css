@@ -1,0 +1,62 @@
+h2{
+    color: gray;
+    text-align: center;
+}
+img{
+    width: 200px;
+    height: 250px;
+    border: 1px solid salmon;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.img{
+    justify-items: center;
+    border-color: black;
+    border-color: black;
+    border-top-right-radius: 0cap;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.185);
+}
+label{
+    font-size: larger;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: black;
+    font-weight: 100;
+}
+#categorySelect{
+   background-color: rgba(35, 176, 211, 0.603);
+   border-radius: 2px;
+   border-style: double;
+}
+#updateCategoryButton{
+    background-color: rgba(3, 1, 20, 0.699);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.card{
+    border: 1px solid;
+    display: flex;
+    margin: 15px;
+    column-gap: 30px;
+    color: black;
+    box-shadow: 5px 5px #07060752;
+    cursor: pointer;
+}
+.card:hover{
+   background-color: rgba(0, 238, 255, 0.336);
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 767px) and (max-width: 1023){
+
+}
+

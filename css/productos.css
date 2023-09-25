@@ -1,0 +1,97 @@
+body{
+    background: #FF5F6D; 
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  
+    background: linear-gradient(to right, #FFC371, #FF5F6D);
+    
+}
+footer{
+    background-color: rgb(156, 248, 157);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items: center;
+    list-style-type: none;
+}
+ul.social-icons {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-inline: 20px;
+    justify-content: space-between
+}
+ul li{
+    margin-right: 5px;
+    margin-left: 15px;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.card{
+    border: 1px solid;
+    display: flex;
+    margin: 15px;
+    column-gap: 30px;
+    color: black;
+    box-shadow: 5px 5px #07060752;
+    cursor: pointer;
+}
+.card:hover{
+   background-color: rgba(0, 238, 255, 0.336);
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 767px) and (max-width: 1023){
+
+}
+h2{
+    color: gray;
+}
+.card_img{
+    display: flex;
+
+}
+.card_img > image{
+    width: 100%;
+}
+img{
+    width: 200px;
+    height: 250px;
+    border: 1px solid salmon;
+    object-fit: cover;
+    margin-right: 10px;
+}
+img{
+    width: 200px;
+    height: 250px;
+    border: 1px solid salmon;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.product {
+     border: 1px solid #ccc;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+        width: 300px;
+
+    }
+    
+    .product img {
+        max-width: 100%;
+    }   
+.product button {    
+background-color: #007BFF;
+color: white;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+    }
