@@ -11,28 +11,21 @@ document.addEventListener('DOMContentLoaded', function() {
         fetch('https://raw.githubusercontent.com/Zunilda-Encina/Archivo.json/08cd172f79fee2d51babdaeff68f472282d008f5/nuevo.json') 
             .then(response => response.json())
             .then(products => {
-
-                products.forEach(product => {
-                    fetch('https://fakestoreapi.com/products', {
-                        method: 'POST',
-                        body: JSON.stringify(product)
-                    })
-                .then(response => response.json())
-                .then(newProduct => {
                     // Aca hacemos que los productos se muestren
                     //Esta asi nomas, porque es de prueba solamente
-                    const productItem = document.createElement('div');
-                    productItem.innerHTML = `
-                        <h2>${newProduct.title}</h2>
-                        <p>${newProduct.description}</p>
-                        <p>Price: $${newProduct.price}</p>
-                        <img src="${newProduct.image}" alt="${newProduct.title}">
-                    `;
-                    productList.appendChild(productItem);
+                    products.forEach(newProduct => {
+                        const productItem = document.createElement('div');
+                        productItem.classList.add('objeto');
+                        productItem.innerHTML = `
+                            <h2>${newProduct.title}</h2>
+                            <img src="${newProduct.image}" alt="${newProduct.title}">
+                            <p>Price: $${newProduct.price}</p>
+                            <p>${newProduct.description}</p>
+                           
+                        `;
+                        productList.appendChild(productItem);
+                    });
                 })
-                .catch(error => console.error('Error al agregar el producto:', error));
-            });
-        })
-            .catch(error => console.error('Error al cargar el archivo JSON:', error));
+                .catch(error => console.error('Error al cargar el archivo JSON:', error));
+        });
     });
-});
