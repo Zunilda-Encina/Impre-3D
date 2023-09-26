@@ -18,13 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
       .catch(error => console.error('Error loading categories:', error));
   }
 
-  // Función para cargar productos por categoría
+  // Esta parte es similar al de productos, cambiaria que llama a categoria
   function loadProductsByCategory(category) {
     fetch(`https://fakestoreapi.com/products/category/${category}`)
       .then(res => res.json())
       .then(data => {
         productList.innerHTML = ''; 
-        // Limpiar la lista de productos
 
         data.forEach(product => {
           const listItem = document.createElement('li');
@@ -43,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function() {
       .catch(error => console.error('Error loading products:', error));
   }
 
-  // Cargar las categorías al cargar la página
+  // Cargar las categorías
   loadCategories();
 
-  // Manejar el evento de clic en el botón de actualización de categoría
+  // Esto seria el evento clink para cambiar los datos de categoria
   updateCategoryButton.addEventListener('click', function() {
     const selectedCategory = categorySelect.value;
     loadProductsByCategory(selectedCategory);

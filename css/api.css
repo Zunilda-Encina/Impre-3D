@@ -2,6 +2,12 @@ h2{
     color: gray;
     text-align: center;
 }
+h1{
+    color-interpolation-filters: auto;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px blueviolet;
+}
 img{
     width: 200px;
     height: 250px;
@@ -20,18 +26,25 @@ label{
     font-size: larger;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-style: italic;
+    font-feature-settings: "blwm";
+    box-shadow: 0px 2px rgba(60, 47, 235, 0.733);
     color: black;
-    font-weight: 100;
+    
 }
 #categorySelect{
-   background-color: rgba(35, 176, 211, 0.603);
+   background-color: rgba(35, 176, 211, 0.199);
    border-radius: 2px;
    border-style: double;
+   box-decoration-break: inherit;
+   box-shadow: 3px 4px  black;
+   
 }
+
 #updateCategoryButton{
     background-color: rgba(3, 1, 20, 0.699);
     border: none;
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
@@ -59,4 +72,6 @@ label{
 @media screen and (max-width: 767px) and (max-width: 1023){
 
 }
-
+footer{
+    justify-content: flex-end;
+}
