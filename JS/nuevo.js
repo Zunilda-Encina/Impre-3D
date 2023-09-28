@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const productList = document.getElementById('productList');
     // Este es el elemento para mostrar la lista de productos
     
-    //aca se se llama al archico.json o eso deberia ser
-    //Primero faltaria ponerel JSON en algun servidor
+    
     //Despues subimos el archivo a github y listo
     nuevoProducto.addEventListener('click', function() {
         fetch('https://raw.githubusercontent.com/Zunilda-Encina/Archivo.json/08cd172f79fee2d51babdaeff68f472282d008f5/nuevo.json') 

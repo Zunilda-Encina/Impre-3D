@@ -40,12 +40,15 @@ ul.social-icons {
 ul li{
     margin-right: 5px;
     margin-left: 15px;
+    list-style: none;
 }
 main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 2rem;
+    list-style-type: none;
+
 }
 .card{
     border: 1px solid;
@@ -55,7 +58,8 @@ main{
     color: black;
     box-shadow: 5px 5px #07060788;
     cursor: pointer;
-    
+    flex-grow: 1;
+    flex-basis: 200;
 }
 #sortButton{
     background-origin: border-box;
